@@ -1,0 +1,4 @@
+interface:
+  display_name: "TF 口播精剪与审核复盘"
+  short_description: "精剪口播中的重录、卡壳与多余气口，保留观点并根据审核反馈复盘"
+  default_prompt: "使用 $tf-narration-finecut 精剪这些口播视频，保留独立观点和临场补充，清理重复起句、卡壳与多余气口，并输出剪辑记录和审核结果。"

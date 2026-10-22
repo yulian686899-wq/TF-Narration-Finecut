@@ -1,0 +1,24 @@
+name: "改进建议"
+description: "提出有具体使用场景的规则、文档或体验建议。"
+title: "[建议] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "遇到什么问题"
+      description: "说明场景和当前做法带来的影响。"
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "建议怎样改"
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: "适用范围和例外"
+      description: "哪些情况应采用，哪些相似情况应保留原处理？"
+    validations:
+      required: false

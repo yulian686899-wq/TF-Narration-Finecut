@@ -1,0 +1,48 @@
+name: "剪辑问题反馈"
+description: "反馈漏剪、误删、切字、停顿或声音问题。"
+title: "[剪辑反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: "请使用可公开的说明或脱敏台词，不要上传私人原片、密钥或个人资料。"
+  - type: input
+    id: version
+    attributes:
+      label: "使用版本"
+      placeholder: "例如 v0.1.0 或提交号"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "运行环境"
+      description: "操作系统、Codex 版本及已知的 FFmpeg、Python、转写工具情况。"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "问题类型"
+      options:
+        - "重复或卡壳漏剪"
+        - "独立内容误删"
+        - "字音被切断"
+        - "气口、节奏或衔接"
+        - "音量或声音接缝"
+        - "转写文字错误"
+        - "其他"
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: "实际表现与上下文"
+      description: "大致时间范围、前后句及实际处理，可以用脱敏台词复现。"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "预期怎样处理"
+    validations:
+      required: true
