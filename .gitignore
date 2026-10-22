@@ -21,3 +21,4 @@ outputs/
 *.m4a
 *.zip
 *.log
+dist/
